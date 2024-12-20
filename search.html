@@ -88,19 +88,8 @@
     </script>
 <label for="websiteUrl">Enter a website URL:</label>
     <input type="text" id="websiteUrl" placeholder="https://example.com">
-    <button onclick="loadWebsite()">Load Website</button>
+    <button onclick="openFullscreen()">Load Website</button>
     <iframe id="websiteFrame" src="" title="Website Viewer"></iframe>
-
-    <script>
-        function loadWebsite() {
-            const urlInput = document.getElementById('websiteUrl').value;
-            const iframe = document.getElementById('websiteFrame');
-            if (urlInput.startsWith('http://') || urlInput.startsWith('https://')) {
-                iframe.src = urlInput;
-            } else {
-                alert('Please enter a valid URL starting with http:// or https://');
-            }
-        }
     </script>
     <footer>
         <p>&copy; 2024 BoBCroakman</p> 
